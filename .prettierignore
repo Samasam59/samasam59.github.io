@@ -1,0 +1,6 @@
+vendor/
+node_modules/
+_site/
+.jekyll-cache/
+tutoriel-jekyll-sam.html
+docs/rapport-installation-locale.md
