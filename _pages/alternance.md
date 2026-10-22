@@ -7,7 +7,11 @@ nav_order: 2
 images:
   slider: true
 portfolio_slider: alternance
+portfolio_spacious: true
 ---
+
+<section class="portfolio-intro portfolio-intro--institution" aria-labelledby="mon-entreprise-de-formation" markdown="1">
+<div markdown="1">
 
 ## Mon entreprise de formation
 
@@ -17,7 +21,13 @@ La MEL est une collectivité territoriale regroupant 95 communes, intervenant da
 
 Au sein de la DNum, je participe au support informatique de niveau 1, à la gestion des demandes utilisateurs et à l’administration d’outils numériques, tout en contribuant à l’amélioration continue des services IT et à la qualité du support apporté aux agents.
 
+</div>
+
 {% include portfolio-slider.liquid gallery=site.data.carousels.alternance id="alternance-slider" %}
+
+</section>
+
+<section class="portfolio-section portfolio-section--ruled portfolio-missions" aria-labelledby="mes-domaines-dintervention" markdown="1">
 
 ## Mes domaines d’intervention
 
@@ -64,3 +74,5 @@ Cela inclut la réalisation de requêtes et scripts SQL afin de manipuler ou con
 Ces travaux m’ont permis de mieux comprendre le rôle des bases de données dans les outils métiers ainsi que l’importance de l’intégrité et de la cohérence des données.
 
 </details>
+
+</section>
