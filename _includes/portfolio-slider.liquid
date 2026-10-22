@@ -1,0 +1,27 @@
+{% assign gallery = include.gallery %}
+<section class="portfolio-slider" data-slider role="region" aria-roledescription="carrousel" aria-label="{{ gallery.label | escape }}">
+  <p class="portfolio-slider__motion-note" data-slider-motion-note hidden>Défilement automatique désactivé : animations réduites.</p>
+  <swiper-container id="{{ include.id }}" init="false">
+    {% for image in gallery.images %}
+      <swiper-slide role="group" aria-roledescription="diapositive" aria-label="{{ forloop.index }} sur {{ gallery.images.size }}">
+        <img src="{{ image.src | relative_url }}" alt="{{ image.alt | escape }}" width="1600" height="900" loading="lazy" decoding="async">
+      </swiper-slide>
+    {% endfor %}
+  </swiper-container>
+  <div class="portfolio-slider__pagination" role="group" aria-label="Choisir une image" hidden>
+    {% for image in gallery.images %}
+      <button
+        type="button"
+        data-slider-slide="{{ forloop.index0 }}"
+        aria-label="Image {{ forloop.index }} sur {{ gallery.images.size }} : {{ image.alt | escape }}"
+        aria-controls="{{ include.id }}"
+        {% if forloop.first %}
+          aria-current="true"
+        {% endif %}
+      >
+        <span aria-hidden="true"></span>
+      </button>
+    {% endfor %}
+  </div>
+  <p class="portfolio-slider__status" aria-live="off" aria-atomic="true"></p>
+</section>

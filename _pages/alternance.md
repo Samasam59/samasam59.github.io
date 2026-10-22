@@ -4,6 +4,9 @@ title: Alternance
 permalink: /alternance/
 nav: true
 nav_order: 2
+images:
+  slider: true
+portfolio_slider: alternance
 ---
 
 ## Mon entreprise de formation
@@ -13,6 +16,8 @@ En parallèle de ma formation, j’évolue à la Métropole Européenne de Lille
 La MEL est une collectivité territoriale regroupant 95 communes, intervenant dans de nombreux domaines tels que le développement durable, le numérique, la mobilité ou encore la voirie, au service des habitants et des agents du territoire.
 
 Au sein de la DNum, je participe au support informatique de niveau 1, à la gestion des demandes utilisateurs et à l’administration d’outils numériques, tout en contribuant à l’amélioration continue des services IT et à la qualité du support apporté aux agents.
+
+{% include portfolio-slider.liquid gallery=site.data.carousels.alternance id="alternance-slider" %}
 
 ## Mes domaines d’intervention
 

@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+{% if page.portfolio_slider %}
+  <link rel="stylesheet" href="{{ '/assets/css/portfolio-slider.css' | relative_url }}">
+  <script defer src="{{ '/assets/js/portfolio-slider.js' | relative_url }}"></script>
+{% endif %}
 <div class="post">
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>

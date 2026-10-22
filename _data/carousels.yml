@@ -1,0 +1,27 @@
+# Ordre confirmé sur WordPress local le 22 octobre 2026.
+formation:
+  label: Le lycée Gaston Berger
+  images:
+    - src: /assets/img/wordpress/2026/01/logo-gb.png
+      alt: Logo du lycée Gaston Berger
+    - src: /assets/img/wordpress/2026/01/GB-vu-den-haut.png
+      alt: Vue aérienne du lycée Gaston Berger
+    - src: /assets/img/wordpress/2026/01/CDI-GB.png
+      alt: Centre de documentation et d’information du lycée Gaston Berger
+    - src: /assets/img/wordpress/2026/01/Cour-GB-.png
+      alt: Cour du lycée Gaston Berger
+    - src: /assets/img/wordpress/2026/01/Entree-GB.png
+      alt: Entrée du lycée Gaston Berger
+alternance:
+  label: La Métropole Européenne de Lille
+  images:
+    - src: /assets/img/wordpress/2026/03/biotope_2.jpg
+      alt: Le Biotope, siège de la Métropole Européenne de Lille
+    - src: /assets/img/wordpress/2026/03/Biotope.jpg
+      alt: Autre vue du Biotope
+    - src: /assets/img/wordpress/2026/03/biotope_ronchin.jpg
+      alt: Site de la Métropole Européenne de Lille à Ronchin
+    - src: /assets/img/wordpress/2026/03/melmap.jpg
+      alt: Carte du territoire de la Métropole Européenne de Lille
+    - src: /assets/img/wordpress/2026/03/logo-MEL.png
+      alt: Logo de la Métropole Européenne de Lille

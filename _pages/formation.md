@@ -4,6 +4,9 @@ title: Formation
 permalink: /formation/
 nav: true
 nav_order: 1
+images:
+  slider: true
+portfolio_slider: formation
 ---
 
 ## À propos de ma formation en CFA
@@ -11,6 +14,8 @@ nav_order: 1
 Depuis 2024, je prépare un BTS Services Informatiques aux Organisations (SIO), option SISR (Solutions d’Infrastructure, Systèmes et Réseaux), dans le cadre d’une formation en alternance au Lycée Gaston Berger, situé entre Lille et Ronchin.
 
 Cette formation, en complément de mon apprentissage me permet d’acquérir des compétences en administration systèmes et réseaux, en déploiement d’infrastructures informatiques, ainsi qu’en gestion et support des environnements professionnels.
+
+{% include portfolio-slider.liquid gallery=site.data.carousels.formation id="formation-slider" %}
 
 ## Mon parcours et mes apprentissages
 
