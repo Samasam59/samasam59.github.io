@@ -20,6 +20,12 @@
   line-height: 1.6;
 }
 
+.portfolio-page h2,
+.portfolio-page h3,
+.portfolio-page h4 {
+  font-weight: 700;
+}
+
 .portfolio-page h2 {
   margin: 0 0 24px;
   font-size: 1.75rem;
@@ -89,6 +95,9 @@
   display: block;
   width: min(100%, 240px);
   height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
   justify-self: center;
 }
 
@@ -128,7 +137,7 @@
 .portfolio-missions summary {
   padding-block: 16px;
   font-size: 1.125rem;
-  font-weight: 500;
+  font-weight: 700;
   cursor: pointer;
 }
 
