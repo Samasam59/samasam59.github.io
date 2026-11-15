@@ -1,0 +1,46 @@
+name: Deploy site
+
+# Adapté de https://github.com/alshedivat/al-folio/blob/main/.github/workflows/deploy.yml
+# Build Jekyll puis publication du dossier _site/ sur la branche gh-pages.
+# Réglage GitHub requis : Settings > Pages > Source = "Deploy from a branch" > gh-pages.
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v7
+
+      - name: Setup Ruby 💎
+        uses: ruby/setup-ruby@v1
+        with:
+          # Sans ruby-version, l'action lit .ruby-version (3.4.11)
+          bundler-cache: true
+
+      - name: Build 🔧
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Deploy 🚀
+        # Les pull requests ne font que vérifier que le build passe
+        if: github.event_name != 'pull_request'
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: _site
