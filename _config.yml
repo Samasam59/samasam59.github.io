@@ -284,6 +284,8 @@ last_name: ""
 description: Le portfolio de Sam
 icon: chat-favicon.png
 apple_touch_icon: chat-favicon-192.png
+serve_og_meta: true
+og_image: /assets/img/chat-favicon-192.png
 navbar_fixed: true
 footer_fixed: false
 max_width: 930px
