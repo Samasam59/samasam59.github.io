@@ -1,0 +1,105 @@
+/* Footer global (override de _includes/footer.liquid), inspiré de l'ancien WordPress. */
+.site-footer {
+  border-top: 1px solid var(--global-divider-color);
+  padding: 2rem 0 1rem;
+  color: var(--global-text-color);
+}
+.site-footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2rem;
+}
+.site-footer h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+}
+.site-footer-cta h2 {
+  font-size: 1.5rem;
+}
+.site-footer p {
+  margin-bottom: 0.75rem;
+}
+.site-footer-location {
+  font-weight: 600;
+}
+.site-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.site-footer li {
+  margin-bottom: 0.4rem;
+}
+.site-footer a {
+  color: var(--global-text-color);
+  text-decoration: none;
+}
+.site-footer a:hover,
+.site-footer a:focus-visible {
+  color: var(--global-theme-color);
+  text-decoration: underline;
+}
+.site-footer a:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 2px;
+}
+.site-footer-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.site-footer .site-footer-btn {
+  padding: 0.6rem 1.25rem;
+  border: 2px solid var(--global-theme-color);
+  border-radius: 999px;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+.site-footer .site-footer-btn-primary {
+  background: var(--global-theme-color);
+  color: var(--global-bg-color);
+}
+.site-footer .site-footer-btn-outline {
+  background: transparent;
+  color: var(--global-theme-color);
+}
+.site-footer .site-footer-btn:hover,
+.site-footer .site-footer-btn:focus-visible {
+  background: transparent;
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+.site-footer .site-footer-btn-outline:hover,
+.site-footer .site-footer-btn-outline:focus-visible {
+  background: var(--global-theme-color);
+  color: var(--global-bg-color);
+}
+.site-footer-copyright {
+  margin: 2rem 0 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--global-divider-color);
+  font-size: 0.875rem;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .site-footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Texte réservé aux lecteurs d'écran (pas de classe Bootstrap dans ce thème). */
+.site-footer-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}

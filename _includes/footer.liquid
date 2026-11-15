@@ -1,0 +1,45 @@
+{% comment %}
+  Override local du footer d'al_folio_core (reproduit le footer de l'ancien WordPress).
+  Raison : le footer de la gem n'affiche qu'une ligne de copyright.
+  Suivi de dérive : bundle exec al-folio upgrade overrides audit
+{% endcomment %}
+<link rel="stylesheet" href="{{ '/assets/css/portfolio-footer.css' | relative_url }}">
+<footer class="site-footer mt-5" role="contentinfo">
+  <div class="container">
+    <div class="site-footer-grid">
+      <section class="site-footer-cta" aria-labelledby="footer-contact-title">
+        <p class="site-footer-location">📍 Basé à Douai &amp; dans la Métropole Lilloise.</p>
+        <h2 id="footer-contact-title">Envie de me contacter ?</h2>
+        <p>N'hésitez pas à télécharger mon CV complet ou à me laisser un message.</p>
+        <div class="site-footer-buttons">
+          <a class="site-footer-btn site-footer-btn-primary" href="{{ '/contact/' | relative_url }}">✉️ Me contacter</a>
+          <a class="site-footer-btn site-footer-btn-outline" href="{{ '/assets/pdf/CV_1-2026-SC-1.pdf' | relative_url }}" target="_blank" rel="noopener">📄 Télécharger mon CV</a>
+        </div>
+      </section>
+
+      <nav aria-labelledby="footer-nav-title">
+        <h2 id="footer-nav-title">Navigation</h2>
+        <ul>
+          <li><a href="{{ '/' | relative_url }}">Accueil</a></li>
+          <li><a href="{{ '/formation/' | relative_url }}">Ma formation</a></li>
+          <li><a href="{{ '/alternance/' | relative_url }}">Mon alternance</a></li>
+          <li><a href="{{ '/e5/' | relative_url }}">Portfolio E5</a></li>
+          <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="footer-social-title">
+        <h2 id="footer-social-title">Mes réseaux</h2>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/samuel-coquel-129341370/" target="_blank" rel="noopener noreferrer">LinkedIn<span class="site-footer-sr-only"> (nouvel onglet)</span></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <p class="site-footer-copyright">
+      &copy; {{ site.time | date: '%Y' }} Samuel Coquel – Tous droits réservés.
+      <span aria-hidden="true">|</span>
+      <a href="{{ '/legal/' | relative_url }}">Mentions légales</a>
+    </p>
+  </div>
+</footer>

@@ -18,3 +18,5 @@ Thumbs.db
 init.sh
 /node_modules/
 AGENTS.md
+CLAUDE.md
+/.claude/
