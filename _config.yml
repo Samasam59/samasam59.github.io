@@ -282,6 +282,8 @@ theme: al_folio_core
 first_name: Sam
 last_name: ""
 description: Le portfolio de Sam
+icon: chat-favicon.png
+apple_touch_icon: chat-favicon-192.png
 navbar_fixed: true
 footer_fixed: false
 max_width: 930px

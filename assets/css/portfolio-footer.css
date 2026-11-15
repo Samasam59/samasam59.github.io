@@ -103,3 +103,25 @@
   white-space: nowrap;
   border: 0;
 }
+
+/* Petit chat de l'ancien WordPress en fin de titre : barre de navigation (petit)
+   et titre de la page d'accueil (plus gros). Chargé ici car cette feuille est
+   incluse sur toutes les pages (via footer.liquid). */
+.navbar-brand.title::after,
+.post:has(.portfolio-page) > .post-header .post-title::after {
+  content: "";
+  display: inline-block;
+  margin-left: 0.4em;
+  vertical-align: middle;
+  background: url("/assets/img/chat-favicon-192.png") center / contain no-repeat;
+}
+
+.navbar-brand.title::after {
+  width: 1.6em;
+  height: 1.6em;
+}
+
+.post:has(.portfolio-page) > .post-header .post-title::after {
+  width: 1.3em;
+  height: 1.3em;
+}
