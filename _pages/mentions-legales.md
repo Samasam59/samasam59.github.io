@@ -11,7 +11,7 @@ nav_order: 5
 **COQUEL Samuel**
 
 Étudiant en BTS SIO SISR – Portfolio personnel
-[contact@leportfoliodesam.fr](mailto:contact@leportfoliodesam.fr)
+[coquelsamuel@gmail.com](mailto:coquelsamuel@gmail.com)
 
 ## Hébergement
 
@@ -37,7 +37,7 @@ Conformément au Règlement Général sur la Protection des Données (RGPD), vou
 - Droit d’opposition
 
 Ces droits peuvent être exercés en adressant une demande par e-mail à l’adresse suivante :
-**contact@leportfoliodesam.fr**
+**coquelsamuel@gmail.com**
 
 ## Cookies
 
